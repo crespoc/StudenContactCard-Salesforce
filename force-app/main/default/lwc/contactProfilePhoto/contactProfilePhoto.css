@@ -1,0 +1,82 @@
+.card-content {
+    background: linear-gradient(135deg, #063541 30%, #00AFAC 100%); /* Fondo degradado */
+    border-radius: 12px; /* Bordes redondeados */
+    padding: 1rem;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Sombra de card */
+    position: relative; /* Posicionamiento relativo para agregar formas */
+    overflow: hidden; /* Oculta los elementos que sobresalen del borde */
+}
+
+.card-content::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.1); /* Círculo semi-transparente */
+    border-radius: 50%; /* Forma de círculo */
+}
+
+.card-content::after {
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    left: -40px;
+    width: 180px;
+    height: 180px;
+    background-color: rgba(255, 255, 255, 0.1); /* Círculo semi-transparente */
+    border-radius: 50%; /* Forma de círculo */
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2); /* Línea divisoria */
+}
+
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #00AFAC; /* Borde más delgado */
+    margin-right: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); /* Sombra para resaltar la foto */
+}
+
+.contact-info h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #F5F5F5;
+}
+
+.contact-info p {
+    margin: 0;
+    color: #A9E8E4; /* Texto color suave */
+    font-size: 1rem;
+}
+
+.additional-info {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    font-size: 0.9rem;
+    color: #F5F5F5;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alineación central */
+}
+
+.info-item p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #E0E0E0; /* Texto secundario en gris claro */
+}
+
